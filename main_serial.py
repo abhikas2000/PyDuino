@@ -119,7 +119,7 @@ mpHand = mp.solutions.hands #create a hand object from mediapipe
 hands = mpHand.Hands(max_num_hands=1)  # specify no of hands
 mpDraw = mp.solutions.drawing_utils #specify that we want to draw the the connections on hand
 # ser = serial.Serial("COM6", 9600, timeout=1) #specify the serial post, baudrate, and retry interval
-ser=0
+ser=0 #comment this line and uncomment the above to connect through bluetooth
 if __name__ == '__main__':
     """main function"""
 
